@@ -1,0 +1,83 @@
+---
+title: 'How to Create a Segment'
+description: 'Build dynamic audience segments with smart filters'
+---
+
+# How to Create a Segment
+
+## What is a Segment?
+
+A **Segment** (also called Live Segment) is a dynamic audience group that is automatically defined by conditions and filters. Unlike static lists, segments automatically update whenever new contacts meet the defined criteria.
+
+**When to use a Segment:**
+- Target customers based on behavior (e.g., customers who placed an order in the last 30 days)
+- Create audience groups based on location, purchase history, or other attributes
+- Build re-engagement campaigns for specific customer cohorts
+
+## Step-by-Step Guide
+
+### Step 1: Navigate to Live Segment
+
+Click **Audience** in the left sidebar, then select **Live Segment**. You will see the **Segments** page showing existing segments with their name, status, contact count, and last updated time.
+
+![Segments Overview](/images/segment-overview.png)
+
+### Step 2: Click "Create a Segment"
+
+Click the **Create a Segment** button in the top-right corner.
+
+![Create Segment Button](/images/segment-create-btn.png)
+
+### Step 3: Enter Segment Details
+
+Fill in the following fields:
+
+| Field | Description |
+|-------|-------------|
+| **Segment Name** | A short name for your segment (max 10 characters) |
+| **Description** | A brief description of the segment (max 50 characters) |
+
+### Step 4: Define Segment Conditions
+
+Segments are built using **condition groups**. Each group contains one or more filter rules.
+
+**Setting up a condition:**
+1. Choose a **Category** — e.g., Customer Properties, Order Properties
+2. Choose a **Field** — e.g., City, Total Orders, Last Order Date
+3. Choose an **Operator** — e.g., equals, greater than, contains
+4. Enter the **Value** — the specific value to filter by
+
+**Combining conditions:**
+- Click **+ AND** to add another condition within the same group (all conditions must match)
+- Click **+ OR** to add an alternative group (contact matches either group)
+
+![Create Segment Form](/images/segment-create-form.png)
+
+### Step 5: Save the Segment
+
+Click **Save Segment** to create the segment. Retner will process your contacts and calculate the matching audience. The segment status will show as **Completed** once processing is done.
+
+## Managing Segments
+
+### View Segment Details
+
+From the Segments page, you can see:
+- **Segment Name** — The name you assigned
+- **Status** — Processing or Completed
+- **Count** — Number of contacts currently matching the criteria
+- **Last Updated** — When the segment was last recalculated
+
+### Refresh a Segment
+
+Click the **Refresh** icon next to a segment to manually trigger a recalculation and update the contact count.
+
+### Delete a Segment
+
+Click the **Delete** icon to permanently remove a segment. This does not delete the contacts themselves.
+
+## Tips for Building Effective Segments
+
+- **Keep names short** — Segment names are limited to 10 characters, so use abbreviations or codes
+- **Use AND for precision** — Combine multiple AND conditions to narrow down a very specific audience
+- **Use OR for reach** — Use OR groups to create broader segments that match different customer types
+- **Refresh before campaigns** — Always refresh a segment before using it in a campaign to ensure the contact count is up to date

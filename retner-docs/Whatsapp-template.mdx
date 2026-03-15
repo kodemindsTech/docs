@@ -1,0 +1,115 @@
+---
+title: 'How to Create a WhatsApp Template'
+description: 'Create and submit WhatsApp message templates for Meta approval'
+---
+
+# How to Create a WhatsApp Template
+
+## Why WhatsApp Templates?
+
+WhatsApp Business templates are pre-approved message formats that allow you to send proactive messages to customers outside the 24-hour messaging window. Templates are required for campaigns, order confirmations, shipping updates, and automated journey notifications.
+
+Meta reviews and approves each template before use.
+
+## Step-by-Step Guide
+
+### Step 1: Navigate to WhatsApp Templates
+
+Go to **Templates → WhatsApp Template** in the left sidebar.
+
+![WhatsApp Template List](/images/wa-template-list.png)
+
+### Step 2: Click "+ New"
+
+Click the **+ New** button in the top-right corner.
+
+![New WhatsApp Template](/images/wa-template-new.png)
+
+### Step 3: Select Template Category
+
+| Category | Description |
+|---|---|
+| **Marketing** | Promotional offers, product announcements |
+| **Utility** | Order confirmations, delivery updates |
+| **Authentication** | OTPs, verification codes |
+
+### Step 4: Select Template Language
+
+Choose the language (e.g., English, Hindi) for your template.
+
+### Step 5: Enter Template Name
+
+Name rules:
+- Lowercase alphanumeric characters and underscores only
+- No spaces or special characters
+- Example: `order_confirmation_v1`
+
+### Step 6: Select Template Type
+
+| Type | Description |
+|---|---|
+| **Text** | Plain text only |
+| **Image** | Message with image header |
+| **Video** | Message with video header |
+| **Document** | Message with PDF/document |
+
+### Step 7: Write the Template Body
+
+Write your message in the **Template Format** field.
+
+Use numbered placeholders for dynamic variables. For example:
+
+```
+Hello [name], your order [order_id] has been placed. 
+Expected delivery: [date]. Track here: [link]
+```
+
+Variables like `[name]` are filled in dynamically when the message is sent.
+
+Formatting options:
+- `*bold*` for bold text
+- `_italic_` for italic
+- Maximum **1024 characters** allowed
+
+### Step 8: Add Footer (Optional)
+
+Add footer text (max 60 characters) — useful for brand taglines or unsubscribe notices.
+
+### Step 9: Add Interactive Actions (Optional)
+
+| Button Type | Limit | Description |
+|---|---|---|
+| **Phone Number** | 1 | Tap to call |
+| **URL** | 2 | Tap to open website |
+| **Quick Reply** | 7 | Predefined replies |
+| **Copy Code** | 1 | Copy promo/OTP code |
+
+Maximum 25 characters per button.
+
+### Step 10: Preview and Submit
+
+Review the **Template Preview** on the right. Click **Submit Template** to send for Meta review.
+
+<Info>
+Template approval takes a few minutes to 24 hours.
+</Info>
+
+## Template Status Reference
+
+| Status | Meaning |
+|---|---|
+| **Pending** | Awaiting Meta review |
+| **Approved** | Ready to use |
+| **Rejected** | Declined — review reason and resubmit |
+| **Action Required** | Additional info needed |
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Send a WhatsApp Campaign" icon="paper-plane" href="/retner-docs/campaigns">
+      Use your approved template in a campaign
+        </Card>
+          <Card title="Create a Journey" icon="diagram-project" href="/retner-docs/journey-builder">
+              Use templates in automated journeys
+                </Card>
+                </CardGroup>

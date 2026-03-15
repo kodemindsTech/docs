@@ -1,0 +1,107 @@
+---
+title: 'How to Create an AI Assistant'
+description: 'Deploy an AI-powered chatbot for your WhatsApp Business Account'
+---
+
+# How to Create an AI Assistant
+
+## What is an AI Assistant?
+
+The AI Assistant in Retner allows you to create and deploy intelligent conversational AI agents on your WhatsApp Business Account. These assistants automatically handle customer queries, collect information, and provide responses — all without human intervention.
+
+**Why use an AI Assistant?**
+- Handle customer support 24/7 without staff
+- Qualify leads and collect customer data automatically
+- Reduce repetitive support queries
+- Integrate with your knowledge base (FAQs, product catalog, policies)
+- Enable personalized conversations at scale
+
+## Step-by-Step Guide
+
+### Step 1: Navigate to AI Assistant
+
+Click **AI Assistant** in the left sidebar. You will see existing AI assistants with their name, status, channel, and model.
+
+![AI Assistants Overview](/images/ai-assistant-list.png)
+
+### Step 2: Click "+ Create Assistant"
+
+Click the **+ Create Assistant** button in the top-right corner.
+
+![Create AI Assistant Form](/images/ai-assistant-create.png)
+
+### Step 3: Enter Assistant Name
+
+Enter a descriptive name in the **Assistant Name** field.
+
+**Examples:** `Sales Assistant`, `Support Agent`, `Product Advisor`
+
+### Step 4: Select an AI Model
+
+Choose the AI model from the **Model** dropdown:
+
+| Model | Best For |
+|---|---|
+| **AI21: Jamba Large 1.7** | Complex reasoning, detailed responses |
+| **Google: Gemini Flash** | Fast, balanced responses |
+
+<Info>
+Model choice affects response quality and cost. Start with a balanced model and adjust based on performance.
+</Info>
+
+### Step 5: Write Instructions
+
+In the **Instructions** field, define the assistant's behavior:
+
+```
+You are a helpful customer support agent for [Brand Name].
+Help customers with order tracking, product questions, and returns.
+Always be polite. If you cannot help, direct customers to support@brand.com.
+```
+
+Include:
+- The assistant's role and persona
+- Topics it should handle
+- Response style guidelines
+- Any guardrails or restrictions
+
+### Step 6: Build the Knowledge Base
+
+Give your assistant the information it needs to answer accurately.
+
+**File Upload** — Upload reference documents:
+- Supported: CSV, DOC, DOCX, PDF, XLS, XLSX, TXT
+- Max size: 10MB
+- Examples: FAQ doc, Product catalog, Return policy
+
+**Article Links** — Add URLs to help articles or documentation pages that the assistant will index.
+
+### Step 7: Configure Data Collection (Optional)
+
+Click **+ Add data point** in the **Data Collection** section to define fields the assistant should collect during conversations (e.g., Order Number, Customer Name, Contact Preference).
+
+### Step 8: Test in Message Ground
+
+Use the **Message Ground** panel on the right to test your assistant in real-time. Type test messages and verify the responses match expectations. Refine instructions and knowledge base as needed.
+
+### Step 9: Save and Activate
+
+Click **Save Assistant**. On the listing page, toggle the assistant to **Active** to deploy it on your WhatsApp Business Account.
+
+## Using AI Assistant in Journeys
+
+Add AI Agent steps to Journey Builder flows:
+1. Open a journey in Journey Builder
+2. Drag the **AI Agent** block from the Actions panel
+3. Connect it to a flow node and select your assistant
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Create a Journey" icon="diagram-project" href="/retner-docs/journey-builder">
+      Use your AI assistant in automated workflows
+        </Card>
+          <Card title="Send a Campaign" icon="paper-plane" href="/retner-docs/campaigns">
+              Launch a targeted broadcast campaign
+                </Card>
+                </CardGroup>

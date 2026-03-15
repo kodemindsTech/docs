@@ -1,0 +1,79 @@
+---
+title: 'How to Create a Static List'
+description: 'Build a fixed list of contacts by uploading a CSV file'
+---
+
+# How to Create a Static List
+
+## What is a Static List?
+
+A **Static List** is a fixed group of contacts that you manually define by uploading a CSV file. Unlike segments which update automatically, static lists remain the same until you manually update them.
+
+**When to use a Static List:**
+- You have a specific group of customers for a one-time campaign
+- You want to target a manually curated set of contacts (e.g., VIP customers, event attendees)
+- You are importing contacts from an external source
+
+## Step-by-Step Guide
+
+### Step 1: Navigate to List Segment
+
+Go to **Audience → List Segment** in the left sidebar. You will see the **Static Lists** page with a table showing existing lists (List Name, List Size, Created At).
+
+![Static Lists Overview](/images/static-list-overview.png)
+
+### Step 2: Click "+ Create List"
+
+Click the **+ Create List** button in the top-right corner. A "Create Static List" dialog will appear.
+
+![Create Static List Dialog](/images/static-list-create.png)
+
+### Step 3: Enter List Name
+
+In the **List Name** field, type a descriptive name for your list.
+
+**Good examples:** `VIP_Customers_March`, `Abandoned_Cart_Users`, `Newsletter_Subscribers`
+
+### Step 4: Prepare Your CSV File
+
+Your CSV file must follow the correct format. Click **"here"** in the upload area to download the sample CSV template.
+
+| Column | Required | Description |
+|---|---|---|
+| `phone` | Yes (for WhatsApp/SMS) | Mobile number with country code |
+| `email` | Yes (for Email campaigns) | Customer email address |
+| `name` | Recommended | Customer full name |
+
+<Tip>
+Download the sample CSV from the upload dialog to ensure your file format matches Retner's requirements.
+</Tip>
+
+### Step 5: Upload the CSV File
+
+In the **Upload CSV** section, either:
+- **Drag and drop** your CSV file onto the upload area, or
+- Click **Upload** to browse and select the file
+
+### Step 6: Confirm the List
+
+Once uploaded, Retner will process and import your contacts. Your new static list will appear in the table with its name, size, and creation date.
+
+## Important Notes
+
+<Warning>
+Static lists do NOT automatically update. If contacts change, you must re-upload a new CSV to update the list.
+</Warning>
+
+- Phone numbers must include the country code (e.g., `+91 9876543210`)
+- Duplicate entries will be handled automatically
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Create a Segment" icon="filter" href="/retner-docs/segment">
+      Build a dynamic segment that updates automatically
+        </Card>
+          <Card title="Send a Campaign" icon="paper-plane" href="/retner-docs/campaigns">
+              Use your list to send a targeted campaign
+                </Card>
+                </CardGroup>

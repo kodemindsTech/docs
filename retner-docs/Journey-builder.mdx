@@ -1,0 +1,117 @@
+---
+title: 'How to Use Journey Builder'
+description: 'Automate multi-step customer journeys with triggers and actions'
+---
+
+# How to Use Journey Builder
+
+## What is Journey Builder?
+
+**Journey Builder** (also called Automation Flows) lets you create automated, multi-step workflows that send messages to customers based on specific triggers and events. Unlike campaigns that are one-time broadcasts, journeys run continuously and engage customers at the right moment automatically.
+
+**When to use Journey Builder:**
+- Send order confirmation messages automatically after a purchase
+- Recover abandoned carts with a sequence of reminder messages
+- Send shipping and delivery updates to customers
+- Welcome new customers with an onboarding sequence
+- Re-engage inactive customers with personalized follow-ups
+
+## Journey Builder Overview
+
+The Journey Builder dashboard shows:
+- **Unique Journeys Triggered** — Total number of times your automations have been activated
+- **Journey Revenue** — Total revenue attributed to your automation flows
+- **Conversion Rate** — Percentage of triggered journeys that resulted in a conversion
+
+Each automation in the list shows: Automation Name, Channel, Status (Active/Inactive), Created At, Updated At, Count, Total Revenue, Open %, Click %, and Order %.
+
+## Step-by-Step Guide
+
+### Step 1: Navigate to Journey Builder
+
+Click **Journey Builder** in the left sidebar. You will see the **Automation Flows** page with a list of your existing automations and summary stats.
+
+![Journey Builder Overview](/images/journey-builder-overview.png)
+
+### Step 2: Click "+ Create Flow"
+
+Click the **+ Create Flow** button in the top-right corner.
+
+![Create Flow Button](/images/journey-builder-create.png)
+
+### Step 3: Choose a Journey Template or Build From Scratch
+
+You can start with a **pre-built template** for common use cases:
+- Abandoned Cart Recovery
+- Order Confirmation
+- Order Delivered
+- COD Order Confirmation
+- Track Order
+
+Or click **Build From Scratch** to create a fully custom automation.
+
+![Journey Templates](/images/journey-builder-templates.png)
+
+### Step 4: Configure the Trigger
+
+Every journey starts with a **Trigger** — the event that starts the automation. Common triggers include:
+- **Abandoned Cart** — Customer adds items to cart but does not complete checkout
+- **Order Placed** — Customer successfully places an order
+- **Order Delivered** — Order is marked as delivered
+- **Order Shipped** — Order tracking is updated
+
+Select your trigger and configure any trigger conditions (e.g., minimum cart value).
+
+### Step 5: Add Action Blocks
+
+After the trigger, add **Action Blocks** to define what happens next. Available actions include:
+
+| Action | Description |
+|--------|-------------|
+| **Send WhatsApp Message** | Send a WhatsApp template message to the customer |
+| **Send SMS** | Send an SMS message |
+| **Send Email** | Send an email using an email template |
+| **Time Delay** | Wait for a specified period before the next action |
+| **Condition Split** | Branch the journey based on customer behavior (e.g., opened message or not) |
+
+### Step 6: Configure Each Action Block
+
+For each **Send Message** block:
+1. Select the message template to use
+2. Map dynamic variables (e.g., customer name, order number, product name)
+3. Set any personalization options
+
+For **Time Delay** blocks:
+1. Set the delay duration (minutes, hours, or days)
+2. This controls when the next action fires after the previous one
+
+### Step 7: Activate the Journey
+
+Once your flow is configured:
+1. Review all blocks and connections
+2. Toggle the **Status** switch to **Active**
+3. Click **Save Automation** to save and activate your journey
+
+![Active Journey](/images/journey-builder-active.png)
+
+## Managing Journeys
+
+### Activate or Deactivate
+
+Use the toggle switch in the journey list to turn any automation on or off without deleting it.
+
+### View Performance
+
+Click on any journey to see detailed analytics:
+- **Count** — Number of times the journey has been triggered
+- **Total Revenue** — Revenue generated from this automation
+- **Open %** — Message open rate
+- **Click %** — Link click rate
+- **Order %** — Conversion to order rate
+
+## Tips for Better Automations
+
+- **Use Time Delays** strategically — Give customers time to act before sending follow-ups (e.g., send a cart reminder 1 hour after abandonment, then again after 24 hours)
+- **Test your journey** before activating by placing a test order or triggering the event manually
+- **Keep messages concise** — WhatsApp messages should be short and action-oriented
+- **Personalize with variables** — Use customer name, order details, and product names to increase engagement
